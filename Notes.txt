@@ -1,0 +1,4 @@
+sass --watch public/style.scss:public/style.css
+
+<canvas id='canvas'></canvas>
+<span id='info'>Click and drag to draw!<span>
