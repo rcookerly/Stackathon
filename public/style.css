@@ -16,14 +16,15 @@ html:hover span, body:hover span {
 
 canvas {
   cursor: crosshair;
-  border: 1px solid;
+  border: 2px solid;
+  margin: 200px;
 }
 
-span {
+/* span {
   display: flex;
   font-family: 'Georgia';
   font-style: italic;
   font-size: 40px;
   position: fixed;
   bottom: 0;
-}
+} */
