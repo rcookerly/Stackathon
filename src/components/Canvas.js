@@ -51,30 +51,30 @@ class Canvas extends Component {
       }
     };
 
-    const setMouseState = (event) => {
+    const setMouseState = (evt) => {
       const cb = canvas.getBoundingClientRect();
-      switch (event.type) {
+      switch (evt.type) {
         case "mousemove":
-          mouse.x = event.clientX - cb.left;
-          mouse.y = event.clientY - cb.top;
+          mouse.x = evt.clientX - cb.left;
+          mouse.y = evt.clientY - cb.top;
           draw();
           break;
         case "mousedown":
           mouse.down = true;
-          mouse.x = position.x = event.clientX - cb.left;
-          mouse.y = position.y = event.clientY - cb.top;
+          mouse.x = position.x = evt.clientX - cb.left;
+          mouse.y = position.y = evt.clientY - cb.top;
           break;
         case "mouseup":
           mouse.down = false;
           break;
         case "mouseenter":
-          mouse.down = event.buttons === 1;
+          mouse.down = evt.buttons === 1;
           break;
         case "dblclick":
           canvas.width = canvas.width;
           break;
         default:
-          console.log(event);
+          console.log(evt);
       }
     };
 

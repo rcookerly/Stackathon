@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Lyrics from "./components/Lyrics";
-// import Canvas from "./components/Canvas";
+import Search from "./components/Search";
+import Canvas from "./components/Canvas";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Lyrics />
-      {/* <Canvas width="1024px" height="768px" /> */}
+      <Search />
+      <Canvas width="1280px" height="1024px" />
     </>
   )
 }
