@@ -30,7 +30,7 @@ class Search extends Component {
       this.setState({
         artist: "",
         lyrics,
-        song: ""
+        song: "",
       });
     } catch (err) {
       console.log(err);
@@ -41,9 +41,9 @@ class Search extends Component {
     const { artist, lyrics, song } = this.state;
     return (
       <div>
-        <h3>Search for Lyrics!</h3>
+        <h3 className="m-3">Search for Lyrics!</h3>
         <form onSubmit={(evt) => this.handleSubmit(evt)}>
-          <div className="mb-3 w-25">
+          <div className="mb-3 w-25 m-3">
             <input
               type="text"
               onChange={(evt) => this.handleChange(evt)}
@@ -54,7 +54,7 @@ class Search extends Component {
               required
             />
           </div>
-          <div className="mb-3 w-25">
+          <div className="mb-3 w-25 m-3">
             <input
               type="text"
               onChange={(evt) => this.handleChange(evt)}
@@ -65,12 +65,12 @@ class Search extends Component {
               required
             />
           </div>
-          <button className="btn btn-primary w-10" type="submit">
+          <button className="btn btn-primary w-10 m-3" type="submit">
             Search
           </button>
         </form>
         {this.state.lyrics !== "" ? (
-          <Canvas lyrics={lyrics} width="1280px" height="1024px" />
+          <Canvas key={lyrics} lyrics={lyrics} width="1280px" height="1024px" />
         ) : null}
       </div>
     );

@@ -6,7 +6,7 @@ import Canvas from "./components/Canvas";
 const App = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Search />
       <Canvas width="1280px" height="1024px" />
     </>

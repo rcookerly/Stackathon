@@ -19,7 +19,7 @@ class Canvas extends Component {
   render() {
     let counter = 0;
     const { canvas, context, lyrics } = this.state;
-    const minFontSize = 5;
+    const minFontSize = 15;
     const mouse = { x: 0, y: 0, down: false };
     const position = { x: 0, y: window.innerHeight / 2 };
 
