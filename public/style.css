@@ -17,7 +17,7 @@ html:hover span, body:hover span {
 canvas {
   cursor: crosshair;
   border: 2px solid;
-  margin: 100px 75px;
+  margin: 10px 225px;
 }
 
 .btn:focus {
